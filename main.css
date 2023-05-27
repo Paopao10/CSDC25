@@ -179,8 +179,10 @@ a:hover{
   font-size: 1rem;
 }
 .form button {
+  position: relative;
+  left:20%;
   height: 55px;
-  width: 40%;
+  width: 20%;
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
