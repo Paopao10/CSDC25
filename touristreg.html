@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Dashboard | By Code Info</title>
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-</head>
-<body>
-  <div class="container">
-    <!-- NAVBAR a-->
-    <nav>
-      <ul>
-        <li><a href="touristreg.html">
-          <span class="navitem">Register Tourist</span>
-        </a></li>
-        <li><a href="placereg.html">
-          <span class="navitem">Register Place</span>
-        </a></li>
-        <li><a href="tourist.html">
-          <span class="navitem">Registered Tourist</span>
-        </a></li>
-        <li><a href="D:\-_-\csdc\login.html" class="logout">
-          <span class="navitem">Log out</span>
-        </a></li>
-      </ul>
-    </nav>
-    <!-- NAVBAR a-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | By Code Info</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR a-->
+      <nav>
+        <ul>
+          <li>
+            <a href="touristreg.html">
+              <span class="navitem">Register Tourist</span>
+            </a>
+          </li>
+          <li>
+            <a href="placereg.html">
+              <span class="navitem">Register Place</span>
+            </a>
+          </li>
+          <li>
+            <a href="tourist.html">
+              <span class="navitem">Registered Tourist</span>
+            </a>
+          </li>
+          <li>
+            <a href="D:\-_-\csdc\login.html" class="logout">
+              <span class="navitem">Log out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAVBAR a-->
 
-    <!-- MAIN a-->
-    <section class="main">
+      <!-- MAIN a-->
+      <section class="main">
         <div class="mainbox1">
           <ul>
             <li class="active">Tourist Registration</li>
@@ -36,90 +48,89 @@
             <li>Registered Tourist</li>
           </ul>
 
-     <!--CONTENT a-->
-     <form action="#" class="form">
+          <!--CONTENT a-->
+          <form action="#" class="form">
+            <!--first and last name a-->
+            <div class="column">
+              <div class="input-box">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter First Name" required />
+              </div>
+              <div class="input-box">
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter Last Name" required />
+              </div>
+            </div>
+            <!--first and last name a-->
 
-       <!--first and last name a-->
-       <div class="column">
-       <div class="input-box">
-         <label>First Name</label>
-         <input type="text" placeholder="Enter First Name" required />
-       </div>
-       <div class="input-box">
-         <label>Last Name</label>
-         <input type="text" placeholder="Enter Last Name" required />
-       </div>
-     </div>
-       <!--first and last name a-->
+            <!--gender a-->
+            <div class="gender-box">
+              <h3>Gender</h3>
+              <div class="gender-option">
+                <div class="gender">
+                  <input type="radio" id="check-male" name="gender" checked />
+                  <label for="check-male">Male</label>
+                </div>
 
-       <!--gender a-->
-       <div class="gender-box">
-         <h3>Gender</h3>
-         <div class="gender-option">
+                <div class="gender">
+                  <input type="radio" id="check-female" name="gender" />
+                  <label for="check-female">Female</label>
+                </div>
+              </div>
+            </div>
+            <!--gender a-->
 
-           <div class="gender">
-             <input type="radio" id="check-male" name="gender" checked />
-             <label for="check-male">Male</label>
-           </div>
+            <!-- nationality a-->
+            <div class="column">
+              <div class="input-box">
+                <label>Nationality</label>
+                <input type="text" placeholder="Enter Nationality" required />
+              </div>
+              <!-- nationality a-->
 
-           <div class="gender">
-             <input type="radio" id="check-female" name="gender" />
-             <label for="check-female">Female</label>
-           </div>
+              <!-- email address a-->
+              <div class="input-box">
+                <label>Email Address</label>
+                <input type="text" placeholder="Enter Email Address" required />
+              </div>
+            </div>
+            <!-- email address a-->
 
-         </div>
-       </div>
-       <!--gender a-->
+            <!-- phone number and birthdate a-->
+            <div class="column">
+              <div class="input-box">
+                <label>Phone Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label>Birth Date</label>
+                <input type="date" placeholder="Enter birth date" required />
+              </div>
+            </div>
+            <!-- phone number and birthdate a-->
 
-       <!-- nationality a-->
-       <div class="column">
-       <div class="input-box">
-         <label>Nationality</label>
-         <input type="text" placeholder="Enter Nationality" required />
-       </div>
-       <!-- nationality a-->
+            <div class="input-box address">
+              <label>Visitor Type:</label>
+              <div class="column">
+                <div class="select-box">
+                  <select>
+                    <option hidden>Type</option>
+                    <option>Tourist</option>
+                    <option>Local</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-       <!-- email address a-->
-       <div class="input-box">
-         <label>Email Address</label>
-         <input type="text" placeholder="Enter Email Address" required />
-       </div>
-     </div>
-       <!-- email address a-->
-
-       <!-- phone number and birthdate a-->
-       <div class="column">
-         <div class="input-box">
-           <label>Phone Number</label>
-           <input type="number" placeholder="Enter phone number" required />
-         </div>
-         <div class="input-box">
-           <label>Birth Date</label>
-           <input type="date" placeholder="Enter birth date" required />
-         </div>
-       </div>
-      <!-- phone number and birthdate a-->
-
-
-       <div class="input-box address">
-         <label>Visitor Type:</label>
-         <div class="column">
-           <div class="select-box">
-             <select>
-               <option hidden>Type</option>
-               <option>Tourist</option>
-               <option>Local</option>
-             </select>
-           </div>
-         </div>
-       </div>
-
-       <button>Register</button>
-
-     </form>
-   </div>
-   </section>
-    <!-- NAVBAR a-->
-  </div>
-</body>
+            <button>Register</button>
+          </form>
+        </div>
+      </section>
+      <!-- NAVBAR a-->
+    </div>
+  </body>
 </html>
